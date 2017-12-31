@@ -1,0 +1,13 @@
+
+public class Main {
+	public static void main(String[] args) {
+		double myDouble = 20;
+		double myDouble2 = 80;
+		double result = (((myDouble + myDouble2) * 25) % 40);
+		
+		if(result <= 20) {
+			System.out.println("Result = " + result);
+			System.out.println("Total was over the limit.");
+		}
+	}
+}

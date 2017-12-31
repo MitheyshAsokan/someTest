@@ -1,0 +1,12 @@
+
+public class MAIN {
+	public static void main(String[] args) {
+		HealthyBurger myNew = new HealthyBurger("Beef",5,"Original");
+		myNew.burgerAddOn1("Lettuce", 1);
+		myNew.burgerAddOn2("Tomato", 1);
+		myNew.burgerAddOn3("Mayo", 0.5);
+		myNew.burgerAddOn4("Onions", 1);
+		
+		myNew.price();
+	}
+}

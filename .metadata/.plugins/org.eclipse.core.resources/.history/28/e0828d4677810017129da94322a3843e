@@ -1,0 +1,15 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		byte myByte = 10;
+		short myShort = 3000;
+		int myInt = 300000;
+		
+		long myLong = (50000L + 10000L) * (myByte + myShort + myInt);
+		System.out.println("My challenge: " + myLong);
+		
+	}
+	
+}

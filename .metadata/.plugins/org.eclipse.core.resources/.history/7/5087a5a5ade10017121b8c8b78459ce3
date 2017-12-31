@@ -1,0 +1,42 @@
+
+public class BinarySearch {
+	public static void main(String[] args) {
+		int[] myArray = {1,2,3,4,5};
+		System.out.println(binarySearch(myArray,6));
+	}
+	
+	public static int binarySearch(int[] theArray, int find) {
+		int start = 0;
+		int mid = theArray.length / 2;
+		int end = theArray.length - 1;
+		
+		return binarySearch(theArray, find, start, mid, end);
+	}
+	
+	public static int binarySearch(int[] theArray, int find, int start, int mid, int end) {
+		
+		System.out.println(start + " " + mid + " " + end);
+		
+		if(theArray[mid] == find) {
+			return mid; //You found it.
+		}
+		
+		if(theArray[mid] > find) {
+			end = mid;
+			mid = ((end - start) / 2) + start;
+		}else if(theArray[mid] < find) {
+			start = mid;
+			mid = ((end - start) / 2) + start;
+		}
+		
+		if(end == theArray.length - 1 && start == (end - 1)) {
+			mid += 1;
+		}
+		
+		if(end == start) {
+			return -1;
+		}
+		
+		return binarySearch(theArray, find, start, mid, end);
+	}
+}

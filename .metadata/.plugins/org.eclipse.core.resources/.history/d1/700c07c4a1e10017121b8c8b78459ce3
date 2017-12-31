@@ -1,0 +1,30 @@
+
+public class Main {
+	public static void main(String[] args) {
+		algo(5);
+	}
+	
+	
+	
+	public static void algo(int val) {
+		int input = val;
+		boolean test = false;
+		
+		if(input % 2 == 1) {
+			test = true;
+			input -= 1;
+		}
+
+		System.out.print(input + ", ");
+		
+		if(input > 3) {
+			algo(input - 2);
+		}
+		
+		if(input == 2) {
+			System.out.print(1 + " ");
+		}
+		
+		System.out.print( ", " + (input + 1));
+	}
+}

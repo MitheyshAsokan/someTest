@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class Album {
+	private String AlbumName;
+	private String ArtistName;
+	private ArrayList<Song> songs;
+	
+	public Album(String albumName, String artistName) {
+		this.AlbumName = albumName;
+		this.ArtistName = artistName;
+		this.songs = new ArrayList<Song>();
+	}
+
+	public String getAlbumName() {
+		return AlbumName;
+	}
+
+	public void setAlbumName(String albumName) {
+		AlbumName = albumName;
+	}
+
+	public String getArtistName() {
+		return ArtistName;
+	}
+
+	public void setArtistName(String artistName) {
+		ArtistName = artistName;
+	}
+
+	public ArrayList<Song> getSongs() {
+		return songs;
+	}
+
+	public void setSongs(ArrayList<Song> songs) {
+		this.songs = songs;
+	}
+}

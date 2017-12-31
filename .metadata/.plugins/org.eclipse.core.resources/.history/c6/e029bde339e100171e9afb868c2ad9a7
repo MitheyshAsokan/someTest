@@ -1,0 +1,12 @@
+
+public class adjacencyMatrix {
+	private boolean[][] adjacencyMatrix;
+	
+	public adjacencyMatrix(int numOfVertices) {
+		adjacencyMatrix = new boolean[numOfVertices][numOfVertices];
+	}
+	
+	public void addVertex(int vertex) {
+		throw new NotImplementedException();
+	}
+}

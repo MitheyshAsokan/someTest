@@ -1,0 +1,18 @@
+
+public class Person {
+	static String Name = "Jill";
+	static int Salary = 500;
+	
+	public Person(String name, int salary) {
+		Name = name;
+		Salary = salary;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public int getSalary() {
+		return Salary;
+	}
+}

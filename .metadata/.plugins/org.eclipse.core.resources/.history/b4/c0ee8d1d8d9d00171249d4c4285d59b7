@@ -1,0 +1,10 @@
+
+public class PersonList {
+	private Person[] someList;
+
+	public PersonList() {
+		someList = new Person[]();
+	}
+	
+	
+}
